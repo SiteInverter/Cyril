@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ICT Skills Workshop Registration</title>
+</head>
+<body>
+
+<h2>ICT Skills Workshop Registration Form</h2>
+
+<form>
+<fieldset>
+<legend>Personal Information</legend>
+
+<label>Full Name:</label>
+<input type="text" name="name" placeholder="Enter name" required><br><br>
+
+<label>Email:</label>
+<input type="email" name="email" required><br><br>
+
+<label>Birthday:</label>
+<input type="date" name="birthday" required><br><br>
+
+<label>Age:</label>
+<input type="number" name="age" min="10" max="100" required><br><br>
+
+<label>Password:</label>
+<input type="password" name="password" required>
+</fieldset>
+
+<fieldset>
+<legend>Gender</legend>
+<input type="radio" name="gender" value="Male" required> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Prefer not to say"> Prefer not to say
+</fieldset>
+
+<fieldset>
+<legend>Workshop Interests</legend>
+<input type="checkbox" name="interest" value="Web Design"> Web Design<br>
+<input type="checkbox" name="interest" value="Computer Hardware"> Computer Hardware<br>
+<input type="checkbox" name="interest" value="Digital Photography"> Digital Photography
+</fieldset>
+
+<fieldset>
+<legend>Preferred Schedule</legend>
+<select name="schedule" required>
+<option value="">Choose schedule</option>
+<option>Morning</option>
+<option>Afternoon</option>
+<option>Evening</option>
+</select>
+</fieldset>
+
+<fieldset>
+<legend>Additional Information</legend>
+<textarea name="reason" placeholder="Why do you want to join?"></textarea>
+</fieldset>
+
+<br>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+</body>
+</html>
